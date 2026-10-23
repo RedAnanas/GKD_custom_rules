@@ -1,7 +1,7 @@
 {
   "id": 2026102201,
   "name": "RedAnanas 的 GKD 自定义规则",
-  "version": 1,
+  "version": 2,
   "author": "RedAnanas",
   "apps": [
     {
@@ -124,6 +124,32 @@
               "matches": "[text$=\"立享精美播放器\"] <n View - View > Image[visibleToUser=true]",
               "snapshotUrls": [
                 "https://i.gkd.li/i/33821876"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.cmbchina.ccd.pluto.cmbActivity",
+      "name": "掌上生活",
+      "groups": [
+        {
+          "key": 2026102301,
+          "name": "权限提示-关闭消息通知引导",
+          "enable": true,
+          "activityIds": [
+            ".CMBRootActivityV2"
+          ],
+          "rules": [
+            {
+              "key": 0,
+              "matches": [
+                "[text=\"开启消息通知\"]",
+                "[vid=\"iv_close\"][clickable=true][visibleToUser=true]"
+              ],
+              "snapshotUrls": [
+                "https://i.gkd.li/i/33854044"
               ]
             }
           ]
