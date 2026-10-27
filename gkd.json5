@@ -1,7 +1,7 @@
 {
   "id": 2026102201,
   "name": "RedAnanas 的 GKD 自定义规则",
-  "version": 2,
+  "version": 3,
   "author": "RedAnanas",
   "apps": [
     {
@@ -150,6 +150,43 @@
               ],
               "snapshotUrls": [
                 "https://i.gkd.li/i/33854044"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "com.ss.android.auto",
+      "name": "懂车帝",
+      "groups": [
+        {
+          "key": 2026102701,
+          "name": "更新提示-30天内不再提示",
+          "enable": true,
+          "activityIds": [
+            ".activity.UploadBrowserActivity"
+          ],
+          "rules": [
+            {
+              "key": 0,
+              "name": "点击30天内不再提示",
+              "actionMaximum": 1,
+              "matches": [
+                "[text=\"30天内不再提示\"]",
+                "[vid=\"cyc\"] > ImageView[vid=\"bn7\"][clickable=true][visibleToUser=true]"
+              ],
+              "snapshotUrls": [
+                "https://i.gkd.li/i/34015461"
+              ]
+            },
+            {
+              "key": 1,
+              "name": "点击稍后再说",
+              "preKeys": [0],
+              "matches": "[vid=\"fou\"][text=\"稍后再说\"][clickable=true][visibleToUser=true]",
+              "snapshotUrls": [
+                "https://i.gkd.li/i/34015461"
               ]
             }
           ]
