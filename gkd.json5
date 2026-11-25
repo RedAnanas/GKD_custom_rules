@@ -1,7 +1,7 @@
 {
   "id": 2026102201,
   "name": "RedAnanas 的 GKD 自定义规则",
-  "version": 3,
+  "version": 4,
   "author": "RedAnanas",
   "apps": [
     {
@@ -150,6 +150,32 @@
               ],
               "snapshotUrls": [
                 "https://i.gkd.li/i/33854044"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmb.pb",
+      "name": "招商银行",
+      "groups": [
+        {
+          "key": 2026112501,
+          "name": "权限提示-关闭消息通知引导",
+          "enable": true,
+          "activityIds": [
+            "cmb.pb.app.mainframe.container.PBMainActivity"
+          ],
+          "rules": [
+            {
+              "key": 0,
+              "matches": [
+                "[text=\"开启消息通知\"]",
+                "[vid=\"close_btn\"][clickable=true][visibleToUser=true]"
+              ],
+              "snapshotUrls": [
+                "https://i.gkd.li/i/35398756"
               ]
             }
           ]
