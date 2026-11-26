@@ -1,9 +1,35 @@
 {
   "id": 2026102201,
   "name": "RedAnanas 的 GKD 自定义规则",
-  "version": 4,
+  "version": 5,
   "author": "RedAnanas",
   "apps": [
+    {
+      "id": "com.weico.international",
+      "name": "微博轻享版",
+      "groups": [
+        {
+          "key": 2026112701,
+          "name": "更新提示-关闭欢迎回来版本说明",
+          "enable": true,
+          "activityIds": [
+            "com.weico.international.activity.MainFragmentActivity"
+          ],
+          "rules": [
+            {
+              "key": 0,
+              "matches": [
+                "[vid=\"tips_title\"][text=\"欢迎回来\"][visibleToUser=true]",
+                "[vid=\"tips_btn\"][text=\"我知道了\"][clickable=true][visibleToUser=true]"
+              ],
+              "snapshotUrls": [
+                "https://i.gkd.li/i/35477532"
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "id": "tv.danmaku.bili",
       "name": "哔哩哔哩",
